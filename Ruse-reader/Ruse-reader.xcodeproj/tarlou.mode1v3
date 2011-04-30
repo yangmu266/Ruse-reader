@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -272,7 +270,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>4</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
@@ -342,6 +340,8 @@
 							<string>418pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -518,6 +518,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A564991136C1BBA0036C4BA</string>
 		<string>/Users/tarlou/Ruse-reader/Ruse-reader/Ruse-reader.xcodeproj</string>
 	</array>
@@ -643,8 +645,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 185}}</string>
-											<string>{{316, 0}, {378, 185}}</string>
+											<string>{{0, 0}, {316, 194}}</string>
+											<string>{{316, 0}, {378, 194}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -659,8 +661,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 185}}</string>
-											<string>{{0, 185}, {694, 196}}</string>
+											<string>{{0, 0}, {694, 194}}</string>
+											<string>{{0, 194}, {694, 187}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -693,7 +695,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 185}}</string>
+									<string>{{316, 0}, {378, 194}}</string>
 									<key>RubberWindowFrame</key>
 									<string>21 301 694 422 0 0 1280 746 </string>
 								</dict>
@@ -721,13 +723,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>1A564993136C1BBA0036C4BA</string>
+				<string>1ABCF97F136C72EE00F5DE8D</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>1A564994136C1BBA0036C4BA</string>
-				<string>1A564995136C1BBA0036C4BA</string>
-				<string>1A564996136C1BBA0036C4BA</string>
-				<string>1A564997136C1BBA0036C4BA</string>
-				<string>1A564998136C1BBA0036C4BA</string>
+				<string>1ABCF980136C72EE00F5DE8D</string>
+				<string>1ABCF981136C72EE00F5DE8D</string>
+				<string>1ABCF982136C72EE00F5DE8D</string>
+				<string>1ABCF983136C72EE00F5DE8D</string>
+				<string>1ABCF984136C72EE00F5DE8D</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -889,7 +891,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>1A564999136C1BBA0036C4BA</string>
+				<string>1ABCF985136C72EE00F5DE8D</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
