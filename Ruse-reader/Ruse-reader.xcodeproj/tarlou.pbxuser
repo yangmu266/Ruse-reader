@@ -1,6 +1,6 @@
 // !$*UTF8*$!
 {
-	1A42511A136C044600D6BF23 /* Ruse-reader */ = {
+	1A564986136C1BAA0036C4BA /* Ruse-reader */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
@@ -28,7 +28,7 @@
 		sourceDirectories = (
 		);
 	};
-	1A425130136C045A00D6BF23 /* Source Control */ = {
+	1A56499A136C1BBA0036C4BA /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
 		isSCMEnabled = 0;
@@ -38,44 +38,23 @@
 			};
 		};
 	};
-	1A425131136C045A00D6BF23 /* Code sense */ = {
+	1A56499B136C1BBA0036C4BA /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
-	};
-	1A425156136C081E00D6BF23 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */;
-	};
-	1A425157136C081E00D6BF23 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */;
-		name = "Ruse_readerAppDelegate.m: 6";
-		rLen = 0;
-		rLoc = 105;
-		rType = 0;
-		vrLen = 475;
-		vrLoc = 1246;
-	};
-	1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 1020}}";
-			sepNavSelRange = "{105, 0}";
-			sepNavVisRange = "{1246, 475}";
-		};
 	};
 	1D6058900D05DD3D006BFB54 /* Ruse-reader */ = {
 		activeExec = 0;
 		executables = (
-			1A42511A136C044600D6BF23 /* Ruse-reader */,
+			1A564986136C1BAA0036C4BA /* Ruse-reader */,
 		);
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeExecutable = 1A42511A136C044600D6BF23 /* Ruse-reader */;
+		activeExecutable = 1A564986136C1BAA0036C4BA /* Ruse-reader */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Ruse-reader */;
-		codeSenseManager = 1A425131136C045A00D6BF23 /* Code sense */;
+		codeSenseManager = 1A56499B136C1BBA0036C4BA /* Code sense */;
 		executables = (
-			1A42511A136C044600D6BF23 /* Ruse-reader */,
+			1A564986136C1BAA0036C4BA /* Ruse-reader */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -85,7 +64,7 @@
 					20,
 					577,
 					20,
-					48,
+					48.16259765625,
 					43,
 					43,
 					20,
@@ -100,42 +79,11 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
-				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
-				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
-				PBXFileTableDataSourceColumnWidthsKey = (
-					20,
-					537,
-					60,
-					20,
-					48,
-					43,
-					43,
-				);
-				PBXFileTableDataSourceColumnsKey = (
-					PBXFileDataSource_FiletypeID,
-					PBXFileDataSource_Filename_ColumnID,
-					PBXTargetDataSource_PrimaryAttribute,
-					PBXFileDataSource_Built_ColumnID,
-					PBXFileDataSource_ObjectSize_ColumnID,
-					PBXFileDataSource_Errors_ColumnID,
-					PBXFileDataSource_Warnings_ColumnID,
-				);
-			};
-			PBXPerProjectTemplateStateSaveDate = 325846086;
-			PBXWorkspaceStateSaveDate = 325846086;
+			PBXPerProjectTemplateStateSaveDate = 325852074;
+			PBXWorkspaceStateSaveDate = 325852074;
 		};
-		perUserProjectItems = {
-			1A425156136C081E00D6BF23 /* PBXBookmark */ = 1A425156136C081E00D6BF23 /* PBXBookmark */;
-			1A425157136C081E00D6BF23 /* PBXTextBookmark */ = 1A425157136C081E00D6BF23 /* PBXTextBookmark */;
-		};
-		sourceControlManager = 1A425130136C045A00D6BF23 /* Source Control */;
+		sourceControlManager = 1A56499A136C1BBA0036C4BA /* Source Control */;
 		userBuildSettings = {
-		};
-	};
-	8D1107310486CEB800E47090 /* Ruse_reader-Info.plist */ = {
-		uiCtxt = {
-			sepNavWindowFrame = "{{15, 78}, {750, 663}}";
 		};
 	};
 }
