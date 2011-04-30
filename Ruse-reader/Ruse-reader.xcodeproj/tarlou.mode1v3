@@ -272,7 +272,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>5</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
@@ -297,7 +297,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>569 -48 1024 651 0 0 1280 746 </string>
+						<string>256 95 1024 651 0 0 1280 746 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -332,14 +332,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {816, 424}}</string>
+								<string>{{0, 0}, {816, 418}}</string>
 								<key>RubberWindowFrame</key>
-								<string>569 -48 1024 651 0 0 1280 746 </string>
+								<string>256 95 1024 651 0 0 1280 746 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>424pt</string>
+							<string>418pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -352,14 +352,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 429}, {816, 181}}</string>
+								<string>{{0, 423}, {816, 187}}</string>
 								<key>RubberWindowFrame</key>
-								<string>569 -48 1024 651 0 0 1280 746 </string>
+								<string>256 95 1024 651 0 0 1280 746 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>181pt</string>
+							<string>187pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -378,9 +378,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1A56498E136C1BBA0036C4BA</string>
+				<string>1ABCF977136C4E2A00F5DE8D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1A56498F136C1BBA0036C4BA</string>
+				<string>1ABCF978136C4E2A00F5DE8D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -518,13 +518,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A564991136C1BBA0036C4BA</string>
 		<string>/Users/tarlou/Ruse-reader/Ruse-reader/Ruse-reader.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>569 -48 1024 651 0 0 1280 746 </string>
+	<string>256 95 1024 651 0 0 1280 746 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -601,7 +599,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1A564991136C1BBA0036C4BA</string>
-				<string>1A564992136C1BBA0036C4BA</string>
+				<string>1ABCF979136C4E2A00F5DE8D</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
