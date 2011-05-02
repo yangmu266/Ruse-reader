@@ -264,19 +264,21 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>080E96DDFE201D6D7F000001</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
-									<integer>3</integer>
+									<integer>5</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {186, 592}}</string>
+							<string>{{0, 0}, {186, 589}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -288,14 +290,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {203, 610}}</string>
+						<string>{{0, 0}, {203, 607}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>256 95 1024 651 0 0 1280 746 </string>
+						<string>0 98 1280 648 0 0 1280 746 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -306,12 +308,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MyNewFile14.java</string>
+								<string>Ruse_readerViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -319,7 +323,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MyNewFile14.java</string>
+										<string>Ruse_readerViewController.m</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>1A2ED61A136F4E63000AE265</string>
+										<key>history</key>
+										<array>
+											<string>1A2ED5BD136F3E97000AE265</string>
+											<string>1A2ED5D4136F40EC000AE265</string>
+											<string>1A2ED609136F4DAD000AE265</string>
+											<string>1A2ED611136F4DCE000AE265</string>
+											<string>1A2ED616136F4E63000AE265</string>
+											<string>1A2ED617136F4E63000AE265</string>
+											<string>1A2ED618136F4E63000AE265</string>
+											<string>1A2ED619136F4E63000AE265</string>
+											<string>1A2ED608136F4DAD000AE265</string>
+										</array>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -330,18 +350,16 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {816, 418}}</string>
+								<string>{{0, 0}, {1072, 410}}</string>
 								<key>RubberWindowFrame</key>
-								<string>256 95 1024 651 0 0 1280 746 </string>
+								<string>0 98 1280 648 0 0 1280 746 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>418pt</string>
+							<string>410pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -352,18 +370,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 423}, {816, 187}}</string>
+								<string>{{0, 415}, {1072, 192}}</string>
 								<key>RubberWindowFrame</key>
-								<string>256 95 1024 651 0 0 1280 746 </string>
+								<string>0 98 1280 648 0 0 1280 746 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>187pt</string>
+							<string>192pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>816pt</string>
+					<string>1072pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -378,9 +396,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1ABCF977136C4E2A00F5DE8D</string>
+				<string>1A2ED59D136F3A8D000AE265</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>1ABCF978136C4E2A00F5DE8D</string>
+				<string>1A2ED59E136F3A8D000AE265</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -524,7 +542,7 @@
 		<string>/Users/tarlou/Ruse-reader/Ruse-reader/Ruse-reader.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>256 95 1024 651 0 0 1280 746 </string>
+	<string>0 98 1280 648 0 0 1280 746 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -545,7 +563,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>Ruse_scrollDelegate.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -562,6 +580,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -601,7 +621,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1A564991136C1BBA0036C4BA</string>
-				<string>1ABCF979136C4E2A00F5DE8D</string>
+				<string>1A2ED58F136F3A79000AE265</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -645,8 +665,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 194}}</string>
-											<string>{{316, 0}, {378, 194}}</string>
+											<string>{{0, 0}, {316, 201}}</string>
+											<string>{{316, 0}, {378, 201}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -661,8 +681,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 194}}</string>
-											<string>{{0, 194}, {694, 187}}</string>
+											<string>{{0, 0}, {694, 201}}</string>
+											<string>{{0, 201}, {694, 180}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -695,7 +715,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 194}}</string>
+									<string>{{316, 0}, {378, 201}}</string>
 									<key>RubberWindowFrame</key>
 									<string>21 301 694 422 0 0 1280 746 </string>
 								</dict>
@@ -723,13 +743,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>1ABCF97F136C72EE00F5DE8D</string>
+				<string>1A2ED590136F3A79000AE265</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>1ABCF980136C72EE00F5DE8D</string>
-				<string>1ABCF981136C72EE00F5DE8D</string>
-				<string>1ABCF982136C72EE00F5DE8D</string>
-				<string>1ABCF983136C72EE00F5DE8D</string>
-				<string>1ABCF984136C72EE00F5DE8D</string>
+				<string>1A2ED591136F3A79000AE265</string>
+				<string>1A2ED592136F3A79000AE265</string>
+				<string>1A2ED593136F3A79000AE265</string>
+				<string>1A2ED594136F3A79000AE265</string>
+				<string>1A2ED595136F3A79000AE265</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -891,7 +911,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>1ABCF985136C72EE00F5DE8D</string>
+				<string>1A2ED59F136F3A8D000AE265</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
