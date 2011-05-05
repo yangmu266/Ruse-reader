@@ -12,11 +12,12 @@
 	CGPDFDocumentRef pdfRef;
 	CGPDFPageRef page;
 	id rrvc;
+    int currentPageNumber;
 }
 
 - (id)initWithFilePath:(NSString *)filePath with:(id)view;
 - (void)reloadView;
 - (CGPDFDocumentRef)createPDFFromExistFile:(NSString *)aFilePath;
-
+- (void)changePageNumber:(int)number;
 @end
 

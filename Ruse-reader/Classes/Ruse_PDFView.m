@@ -12,8 +12,9 @@
 @implementation Ruse_PDFView
 
 - (id)initWithFilePath:(NSString *)filePath with:(id)view{
+    currentPageNumber = 1;
 	pdfRef = [self createPDFFromExistFile:filePath];
-	CGPDFPageRef pdfPage = CGPDFDocumentGetPage(pdfRef, 1);
+	CGPDFPageRef pdfPage = CGPDFDocumentGetPage(pdfRef, currentPageNumber);
 	CGRect mediaRect = CGPDFPageGetBoxRect(pdfPage, kCGPDFMediaBox);
 	rrvc = view;
 	self = [super initWithFrame:mediaRect];
@@ -28,10 +29,10 @@
     CGPoint location = [touch locationInView:self];
 	CGFloat x = location.x;
 	CGFloat y = location.y;
-	NSLog(@"here");
 	Ruse_readerViewController * r_rvc = rrvc;
 	//[r_rvc setHidden: FALSE];
 	NSString * str = [NSString stringWithFormat:@"%f %f",x,y]; 
+    NSLog(@"%@", str);
 	[r_rvc performSelectorOnMainThread:@selector(setTitle:) withObject:str waitUntilDone:YES];
 //	[r_rvc setTitle: @"I am here"];
 }
@@ -46,7 +47,7 @@
 	CGContextScaleCTM(context, 1, -1);
 	CGContextTranslateCTM(context, 0, -rect.size.height);
 	
-	page = CGPDFDocumentGetPage(pdfRef, 1);
+	page = CGPDFDocumentGetPage(pdfRef, currentPageNumber);
 	
 	CGContextDrawPDFPage(context, page);
 }
@@ -75,5 +76,8 @@
 	[self setNeedsDisplay];
 }
 
+- (void) changePageNumber: (int) number {
+    currentPageNumber = number;
+}
 
 @end

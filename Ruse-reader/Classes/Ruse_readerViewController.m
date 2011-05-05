@@ -7,7 +7,8 @@
 //
 
 #import "Ruse_readerViewController.h"
-#import "Ruse_scrollDelegate.h"
+//#import "Ruse_scrollDelegate.h"
+#import "PDFScrollView.h"
 
 @implementation Ruse_readerViewController
 
@@ -70,15 +71,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-	NSString *filePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"test2.pdf"];
+    [super loadView];
+	
+	// Create our PDFScrollView and add it to the view controller.
+    
+	
+//	NSString *filePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"test2.pdf"];
+//	PDFScrollView *sv = [[PDFScrollView alloc] initWithFrame:[[self view] bounds]];
+    CGRect rect = [_mMainView bounds];
+    CGRect bounds = CGRectMake(rect.origin.x, rect.origin.y, rect.size.height, rect.size.width);
+    PDFScrollView *sv = [[PDFScrollView alloc] initWithFilePath:@"test2.pdf" withView:self withFrame:bounds];
+//    _mScrollView.maximumZoomScale = 5.0;
+//    _mScrollView.minimumZoomScale = 1.0;
+    [_mMainView addSubview: sv];
+    [sv release];
+    
+
+/*
+	NSString *filePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"welcome.pdf"];
 	
 	Ruse_PDFView *pdfView = [[Ruse_PDFView alloc] initWithFilePath:filePath with:self];
 	_mScrollView.contentSize = pdfView.frame.size;
 	[_mScrollView addSubview:pdfView];
 	_mScrollView.maximumZoomScale = 3.0;
 	[_mScrollView setZoomScale:3.0 animated:YES];
-	_mScrollView.zoomScale = 2.9;
+	_mScrollView.zoomScale = 1;
 	[pdfView release];
+ */
 }
 
 // Override to allow orientations other than the default portrait orientation.

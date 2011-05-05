@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Ruse_PDFView.h"
 
-@interface Ruse_readerViewController : UIViewController {
+@interface Ruse_readerViewController : UIViewController<UIScrollViewDelegate> {
 @public
 	IBOutlet UIView* _mMainView;
 	IBOutlet UIScrollView* _mScrollView;
