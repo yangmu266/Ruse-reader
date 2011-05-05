@@ -11,9 +11,10 @@
 @interface Ruse_PDFView : UIView {
 	CGPDFDocumentRef pdfRef;
 	CGPDFPageRef page;
+	id rrvc;
 }
 
-- (id)initWithFilePath:(NSString *)filePath;
+- (id)initWithFilePath:(NSString *)filePath with:(id)view;
 - (void)reloadView;
 - (CGPDFDocumentRef)createPDFFromExistFile:(NSString *)aFilePath;
 

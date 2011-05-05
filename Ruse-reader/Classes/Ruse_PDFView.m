@@ -7,16 +7,33 @@
 //
 
 #import "Ruse_PDFView.h"
+#import "Ruse_readerViewController.h"
 
 @implementation Ruse_PDFView
 
-- (id)initWithFilePath:(NSString *)filePath{
+- (id)initWithFilePath:(NSString *)filePath with:(id)view{
 	pdfRef = [self createPDFFromExistFile:filePath];
 	CGPDFPageRef pdfPage = CGPDFDocumentGetPage(pdfRef, 1);
 	CGRect mediaRect = CGPDFPageGetBoxRect(pdfPage, kCGPDFMediaBox);
+	rrvc = view;
 	self = [super initWithFrame:mediaRect];
 		
 	return self;
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	if (touches == NULL) return;
+	UITouch * touch = [[event allTouches] anyObject];
+    CGPoint location = [touch locationInView:self];
+	CGFloat x = location.x;
+	CGFloat y = location.y;
+	NSLog(@"here");
+	Ruse_readerViewController * r_rvc = rrvc;
+	//[r_rvc setHidden: FALSE];
+	NSString * str = [NSString stringWithFormat:@"%f %f",x,y]; 
+	[r_rvc performSelectorOnMainThread:@selector(setTitle:) withObject:str waitUntilDone:YES];
+//	[r_rvc setTitle: @"I am here"];
 }
 
 - (void)drawRect:(CGRect)rect {

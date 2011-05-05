@@ -11,6 +11,7 @@
 		1A201271136F391F0007F123 /* test2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A20126F136F391F0007F123 /* test2.pdf */; };
 		1A201272136F391F0007F123 /* welcome.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A201270136F391F0007F123 /* welcome.pdf */; };
 		1A2ED600136F4D84000AE265 /* Ruse_scrollDelegate.m in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED5FF136F4D84000AE265 /* Ruse_scrollDelegate.m */; };
+		1A7B29691372C49900375E3D /* test2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A7B29681372C49900375E3D /* test2.pdf */; };
 		1D3623260D0F684500981E51 /* Ruse_readerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -28,6 +29,7 @@
 		1A201270136F391F0007F123 /* welcome.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = welcome.pdf; sourceTree = "<group>"; };
 		1A2ED5FE136F4D84000AE265 /* Ruse_scrollDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ruse_scrollDelegate.h; sourceTree = "<group>"; };
 		1A2ED5FF136F4D84000AE265 /* Ruse_scrollDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ruse_scrollDelegate.m; sourceTree = "<group>"; };
+		1A7B29681372C49900375E3D /* test2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test2.pdf; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Ruse_readerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ruse_readerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ruse_readerAppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A7B29681372C49900375E3D /* test2.pdf */,
 				1A20126F136F391F0007F123 /* test2.pdf */,
 				1A201270136F391F0007F123 /* welcome.pdf */,
 				2899E5210DE3E06400AC0155 /* Ruse_readerViewController.xib */,
@@ -177,6 +180,7 @@
 				1A201271136F391F0007F123 /* test2.pdf in Resources */,
 				1A201272136F391F0007F123 /* welcome.pdf in Resources */,
 				1A2ED600136F4D84000AE265 /* Ruse_scrollDelegate.m in Resources */,
+				1A7B29691372C49900375E3D /* test2.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

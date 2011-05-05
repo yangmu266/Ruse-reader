@@ -11,7 +11,43 @@
 
 @implementation Ruse_readerViewController
 
+-(id)init{
+	self = [super init];
+	if (self)
+	{
+		Toolbar = [[UIToolbar alloc] init];
+		Open = [[UIBarButtonItem alloc] init];
+		//Open.action = @selector(setOpen);
+		Filename = [[UIBarButtonItem alloc] init];
+		[Filename Enabled];
+		Zoom = [[UISegmentedControl alloc] init];
+		Pre_page = [[UIBarButtonItem alloc] init];
+		Next_page = [[UIBarButtonItem alloc] init];
+		Bookmark = [[UIBarButtonItem alloc] init];
+		//Search = [[UISearchDisplayController alloc] init];
+	}
+	return self;
+}
 
+-(void)setHidden:(bool)hide
+{
+	Toolbar.hidden = hide;
+/*	Open.hidden = hide;
+	Filename.hidden = hide;
+	Bookmark.hidden = hide;
+	Next_page.hidden = hide;
+	Pre_page.hidden = hide;*/
+	Zoom.hidden = hide;
+}
+
+-(void)setTitle:(NSString *)str
+{
+	Filename.title = str;
+}
+
+-(IBAction) setOpen
+{
+}
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -36,7 +72,7 @@
 
 	NSString *filePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"test2.pdf"];
 	
-	Ruse_PDFView *pdfView = [[Ruse_PDFView alloc] initWithFilePath:filePath];
+	Ruse_PDFView *pdfView = [[Ruse_PDFView alloc] initWithFilePath:filePath with:self];
 	_mScrollView.contentSize = pdfView.frame.size;
 	[_mScrollView addSubview:pdfView];
 	_mScrollView.maximumZoomScale = 3.0;
@@ -44,7 +80,6 @@
 	_mScrollView.zoomScale = 2.9;
 	[pdfView release];
 }
-
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
