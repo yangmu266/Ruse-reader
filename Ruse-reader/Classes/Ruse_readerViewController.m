@@ -9,6 +9,7 @@
 #import "Ruse_readerViewController.h"
 //#import "Ruse_scrollDelegate.h"
 #import "PDFScrollView.h"
+#import "FileChooserTableViewController.h"
 
 @implementation Ruse_readerViewController
 
@@ -18,27 +19,39 @@
 	{
 		Toolbar = [[UIToolbar alloc] init];
 		Open = [[UIBarButtonItem alloc] init];
-		//Open.action = @selector(setOpen);
 		Filename = [[UIBarButtonItem alloc] init];
-		[Filename Enabled];
 		Zoom = [[UISegmentedControl alloc] init];
 		Pre_page = [[UIBarButtonItem alloc] init];
 		Next_page = [[UIBarButtonItem alloc] init];
 		Bookmark = [[UIBarButtonItem alloc] init];
-		//Search = [[UISearchDisplayController alloc] init];
+		Search = [[UISearchDisplayController alloc] init];
 	}
 	return self;
 }
 
--(void)setHidden:(bool)hide
+-(bool)getSearchHidden
+{
+	return Search.hidden;
+}
+
+-(bool)getToolbarHidden
+{
+	return Toolbar.hidden;
+}
+
+-(void)setOpen
+{
+}
+
+-(void)setSearchHidden:(bool)hide
+{
+	Search.hidden = hide;
+}
+
+-(void)setToolbarHidden:(bool)hide
 {
 	Toolbar.hidden = hide;
-/*	Open.hidden = hide;
-	Filename.hidden = hide;
-	Bookmark.hidden = hide;
-	Next_page.hidden = hide;
-	Pre_page.hidden = hide;*/
-	Zoom.hidden = hide;
+	ToolbarDown.hidden = hide;
 }
 
 -(void)setTitle:(NSString *)str
@@ -46,8 +59,11 @@
 	Filename.title = str;
 }
 
--(IBAction) setOpen
+-(void)setSearchText:(NSString*)str
 {
+	if (Search.text == NULL) Search.text = [[NSString alloc] init];
+	NSString * tmp = [Search.text stringByAppendingString:str];
+	[Search setText: tmp];//[Search.text stringByAppendingString:str]];
 }
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.

@@ -10,7 +10,6 @@
 #import "Ruse_PDFView.h"
 
 @interface Ruse_readerViewController : UIViewController<UIScrollViewDelegate> {
-@public
 	IBOutlet UIView* _mMainView;
 	IBOutlet UIScrollView* _mScrollView;
 	IBOutlet UIToolbar * Toolbar;
@@ -20,11 +19,17 @@
 	IBOutlet UIBarButtonItem *Pre_page;
 	IBOutlet UIBarButtonItem *Next_page;
 	IBOutlet UIBarButtonItem *Bookmark;
+	IBOutlet UISearchBar *Search;
+	IBOutlet UIToolbar * ToolbarDown;
 }
 
 -(IBAction) setOpen;
--(void)setHidden:(bool) hide;
+-(void)setSearchHidden:(bool) hide;
+-(void)setToolbarHidden:(bool) hide;
 -(void)setTitle:(NSString *) str;
+-(void)setSearchText:(NSString*) str;
+-(bool)getToolbarHidden;
+-(bool)getSearchHidden;
 
 @end
 

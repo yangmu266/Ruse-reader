@@ -65,6 +65,8 @@
     
 	CGPDFPageRef page;
 	CGPDFDocumentRef pdf;
+	
+	id rrvc;
 }
 
 - (id)initWithFilePath:(NSString *)filePath withView:(id)view withFrame:(CGRect)frame;

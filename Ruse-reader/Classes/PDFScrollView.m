@@ -45,12 +45,14 @@
 
 #import "PDFScrollView.h"
 #import "TiledPDFView.h"
+#import "Ruse_readerViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation PDFScrollView
 
 - (id)initWithFilePath:(NSString *)filePath withView:(id)view withFrame: (CGRect)frame{
     pdfPath = [NSString stringWithString: filePath];
+	rrvc = view;
 	return (self = [self initWithFrame:frame]);
 }
 
@@ -207,6 +209,9 @@
 // a new TiledPDFView when the zooming ends.
 - (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(UIView *)view
 {
+	Ruse_readerViewController * r_rvc = rrvc;
+	if ([r_rvc getSearchHidden] == FALSE)
+		[r_rvc setSearchHidden:TRUE];
 	// Remove back tiled view.
 	[oldPDFView removeFromSuperview];
 	[oldPDFView release];
@@ -215,5 +220,39 @@
 	oldPDFView = pdfView;
 	[self addSubview:oldPDFView];
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	if (touches == NULL) return;
+	Ruse_readerViewController * r_rvc = rrvc;
+	if (touches.count == 1)
+	{
+		if ([r_rvc getToolbarHidden] == FALSE)
+		{
+			//[r_rvc performSelectorOnMainThread:@selector(setToolbarHidden:) withObject:TRUE waitUntilDone:YES];
+		}
+		else
+		{
+			UITouch * touch = [[event allTouches] anyObject];
+			CGPoint location = [touch locationInView:self];
+			CGFloat x = location.x;
+			CGFloat y = location.y;
+			CGSize b = pdfView.bounds.size;
+			CGFloat xx = b.width, yy = b.height;
+			NSString * str = [NSString stringWithFormat:@"%f %f",x/xx,y/yy];
+			//self.hidden = TRUE;
+			//[r_rvc performSelectorOnMainThread:@selector(setSearchHidden:) withObject:FALSE waitUntilDone:YES];
+			//[r_rvc performSelectorOnMainThread:@selector(setSearchText:)  withObject:str waitUntilDone:YES];
+		}
+		//return;
+	}
+	if (touches.count == 1)
+	{
+		[r_rvc performSelectorOnMainThread:@selector(setToolbarHidden:) withObject:FALSE waitUntilDone:YES];
+		[r_rvc performSelectorOnMainThread:@selector(setTitle:) withObject:@"Double Hit" waitUntilDone:YES];
+		return;
+	}
+}
+
 
 @end
