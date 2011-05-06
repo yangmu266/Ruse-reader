@@ -70,6 +70,7 @@
 }
 
 - (id)initWithFilePath:(NSString *)filePath withView:(id)view withFrame:(CGRect)frame;
-- (IBAction)goNextPage;
+- (IBAction)PDFGoNextPage;
+- (void)changePage: (int)newPageNumber;
 
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Ruse_PDFView.h"
+#import "PDFScrollView.h"
 
 @interface Ruse_readerViewController : UIViewController<UIScrollViewDelegate> {
 	IBOutlet UIView* _mMainView;
@@ -21,6 +22,7 @@
 	IBOutlet UIBarButtonItem *Bookmark;
 	IBOutlet UISearchBar *Search;
 	IBOutlet UIToolbar * ToolbarDown;
+	IBOutlet PDFScrollView* sv;
 }
 
 -(IBAction) setOpen;
@@ -30,6 +32,8 @@
 -(void)setSearchText:(NSString*) str;
 -(bool)getToolbarHidden;
 -(bool)getSearchHidden;
+
+- (IBAction)goNextPage;
 
 @end
 

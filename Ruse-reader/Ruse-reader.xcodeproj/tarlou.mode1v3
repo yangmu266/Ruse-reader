@@ -272,13 +272,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>6</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {282, 589}}</string>
+							<string>{{0, 0}, {282, 656}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -290,14 +290,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {299, 607}}</string>
+						<string>{{0, 0}, {299, 674}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>282</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-3 98 1280 648 0 0 1280 746 </string>
+						<string>0 31 1221 715 0 0 1280 746 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -327,7 +327,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1A83209813746552008DC898</string>
+										<string>1A8321501374798A008DC898</string>
 										<key>history</key>
 										<array>
 											<string>1A7B295C1372C42900375E3D</string>
@@ -338,15 +338,15 @@
 											<string>1A922287137312E90075FEA5</string>
 											<string>1A832060137462C0008DC898</string>
 											<string>1A832061137462C0008DC898</string>
-											<string>1A832064137462C0008DC898</string>
-											<string>1A832065137462C0008DC898</string>
-											<string>1A832066137462C0008DC898</string>
-											<string>1A832067137462C0008DC898</string>
-											<string>1A832068137462C0008DC898</string>
 											<string>1A83206C1374631C008DC898</string>
-											<string>1A83209513746552008DC898</string>
-											<string>1A83209613746552008DC898</string>
-											<string>1A83209713746552008DC898</string>
+											<string>1A8320C21374695E008DC898</string>
+											<string>1A8320C31374695E008DC898</string>
+											<string>1A8320C41374695E008DC898</string>
+											<string>1A8320CC137469DF008DC898</string>
+											<string>1A8320EA13746C96008DC898</string>
+											<string>1A8320EB13746C96008DC898</string>
+											<string>1A8320EC13746C96008DC898</string>
+											<string>1A83210413746F6D008DC898</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -358,14 +358,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {976, 374}}</string>
+								<string>{{0, 0}, {917, 441}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-3 98 1280 648 0 0 1280 746 </string>
+								<string>0 31 1221 715 0 0 1280 746 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>374pt</string>
+							<string>441pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -378,9 +378,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 379}, {976, 228}}</string>
+								<string>{{0, 446}, {917, 228}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-3 98 1280 648 0 0 1280 746 </string>
+								<string>0 31 1221 715 0 0 1280 746 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -389,7 +389,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>976pt</string>
+					<string>917pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -544,13 +544,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1A8320EF13746C96008DC898</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A564991136C1BBA0036C4BA</string>
 		<string>/Users/tarlou/Ruse-3/Ruse-reader/Ruse-reader/Ruse-reader.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>-3 98 1280 648 0 0 1280 746 </string>
+	<string>0 31 1221 715 0 0 1280 746 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -642,7 +643,7 @@
 			<key>WindowToolGUID</key>
 			<string>1A564991136C1BBA0036C4BA</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

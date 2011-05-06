@@ -69,8 +69,8 @@
 				C7E4B8E01372E81E00D1BECD /* PDFScrollView.m */,
 				C7E4B8E11372E81E00D1BECD /* TiledPDFView.h */,
 				C7E4B8E21372E81E00D1BECD /* TiledPDFView.m */,
-				1D3623240D0F684500981E51 /* Ruse_readerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */,
+				1D3623240D0F684500981E51 /* Ruse_readerAppDelegate.h */,
 				28D7ACF60DDB3853001CB0EB /* Ruse_readerViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* Ruse_readerViewController.m */,
 			);

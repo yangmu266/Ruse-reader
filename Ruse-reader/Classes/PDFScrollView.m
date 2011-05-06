@@ -56,61 +56,70 @@
 	return (self = [self initWithFrame:frame]);
 }
 
-- (IBAction)goNextPage{
+- (void)changePage: (int)newPageNumber{
+	currentPageNumber = newPageNumber;
 	
-	[rrvc performSelectorOnMainThread:@selector(setTitle:) withObject:@"YY Hit" waitUntilDone:YES];
+	// Get the PDF Page that we will be drawing
+	page = CGPDFDocumentGetPage(pdf, currentPageNumber);
+	CGPDFPageRetain(page);
+	
+	// determine the size of the PDF page
+	CGRect pageRect = CGPDFPageGetBoxRect(page, kCGPDFMediaBox);
+	pageRect.size = CGSizeMake(pageRect.size.width*pdfScale, pageRect.size.height*pdfScale);
+	
+	// Create a low res image representation of the PDF page to display before the TiledPDFView
+	// renders its content.
+	UIGraphicsBeginImageContext(pageRect.size);
+	
+	CGContextRef context = UIGraphicsGetCurrentContext();
+	
+	// First fill the background with white.
+	CGContextSetRGBFillColor(context, 1.0,1.0,1.0,1.0);
+	CGContextFillRect(context,pageRect);
+	
+	CGContextSaveGState(context);
+	// Flip the context so that the PDF page is rendered
+	// right side up.
+	CGContextTranslateCTM(context, 0.0, pageRect.size.height);
+	CGContextScaleCTM(context, 1.0, -1.0);
+	
+	// Scale the context so that the PDF page is rendered 
+	// at the correct size for the zoom level.
+	CGContextScaleCTM(context, pdfScale,pdfScale);	
+	CGContextDrawPDFPage(context, page);
+	CGContextRestoreGState(context);
+	
+	UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+	
+	UIGraphicsEndImageContext();
+	
+	[backgroundImageView removeFromSuperview];
+	[backgroundImageView release];
+	
+	backgroundImageView = [[UIImageView alloc] initWithImage:backgroundImage];
+	backgroundImageView.frame = pageRect;
+	backgroundImageView.contentMode = UIViewContentModeScaleAspectFit;
+//	[self addSubview:backgroundImageView];
+//	[self sendSubviewToBack:backgroundImageView];
+	
+	// Create the TiledPDFView based on the size of the PDF page and scale it to fit the view.
+	//		pdfView = [[TiledPDFView alloc] initWithFrame:pageRect andScale:pdfScale];
+//	[oldPDFView removeFromSuperview];
+//	[oldPDFView release];
+	[pdfView removeFromSuperview];
+	[pdfView release];
+
+	pdfView = [[TiledPDFView alloc] initWithFrame:pageRect andScale:pdfScale];
+	[pdfView setPage:page];
+	
+	[self addSubview:pdfView];
+}
+
+- (IBAction)PDFGoNextPage{
+	
 	if (currentPageNumber + 1 < CGPDFDocumentGetNumberOfPages(pdf))
 	{
-		// refresh the new page count
-		currentPageNumber ++;
-		
-		// Get the PDF Page that we will be drawing
-		page = CGPDFDocumentGetPage(pdf, currentPageNumber);
-		CGPDFPageRetain(page);
-		
-		// determine the size of the PDF page
-		CGRect pageRect = CGPDFPageGetBoxRect(page, kCGPDFMediaBox);
-		pdfScale = self.frame.size.width/pageRect.size.width;
-		pageRect.size = CGSizeMake(pageRect.size.width*pdfScale, pageRect.size.height*pdfScale);
-		
-		// Create a low res image representation of the PDF page to display before the TiledPDFView
-		// renders its content.
-		UIGraphicsBeginImageContext(pageRect.size);
-		
-		CGContextRef context = UIGraphicsGetCurrentContext();
-		
-		// First fill the background with white.
-		CGContextSetRGBFillColor(context, 1.0,1.0,1.0,1.0);
-		CGContextFillRect(context,pageRect);
-		
-		CGContextSaveGState(context);
-		// Flip the context so that the PDF page is rendered
-		// right side up.
-		CGContextTranslateCTM(context, 0.0, pageRect.size.height);
-		CGContextScaleCTM(context, 1.0, -1.0);
-		
-		// Scale the context so that the PDF page is rendered 
-		// at the correct size for the zoom level.
-		CGContextScaleCTM(context, pdfScale,pdfScale);	
-		CGContextDrawPDFPage(context, page);
-		CGContextRestoreGState(context);
-		
-		UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
-		
-		UIGraphicsEndImageContext();
-		
-		backgroundImageView = [[UIImageView alloc] initWithImage:backgroundImage];
-		backgroundImageView.frame = pageRect;
-		backgroundImageView.contentMode = UIViewContentModeScaleAspectFit;
-//		[self addSubview:backgroundImageView];
-//		[self sendSubviewToBack:backgroundImageView];
-		
-		// Create the TiledPDFView based on the size of the PDF page and scale it to fit the view.
-//		pdfView = [[TiledPDFView alloc] initWithFrame:pageRect andScale:pdfScale];
-		[pdfView setPage:page];
-		
-//		[self addSubview:pdfView];
-//		[pdfView setPage:page];
+		[self changePage:currentPageNumber + 1];
 	}
 }
 
