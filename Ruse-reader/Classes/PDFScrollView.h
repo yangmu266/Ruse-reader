@@ -70,5 +70,6 @@
 }
 
 - (id)initWithFilePath:(NSString *)filePath withView:(id)view withFrame:(CGRect)frame;
+- (IBAction)goNextPage;
 
 @end

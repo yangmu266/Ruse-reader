@@ -56,17 +56,75 @@
 	return (self = [self initWithFrame:frame]);
 }
 
+- (IBAction)goNextPage{
+	
+	[rrvc performSelectorOnMainThread:@selector(setTitle:) withObject:@"YY Hit" waitUntilDone:YES];
+	if (currentPageNumber + 1 < CGPDFDocumentGetNumberOfPages(pdf))
+	{
+		// refresh the new page count
+		currentPageNumber ++;
+		
+		// Get the PDF Page that we will be drawing
+		page = CGPDFDocumentGetPage(pdf, currentPageNumber);
+		CGPDFPageRetain(page);
+		
+		// determine the size of the PDF page
+		CGRect pageRect = CGPDFPageGetBoxRect(page, kCGPDFMediaBox);
+		pdfScale = self.frame.size.width/pageRect.size.width;
+		pageRect.size = CGSizeMake(pageRect.size.width*pdfScale, pageRect.size.height*pdfScale);
+		
+		// Create a low res image representation of the PDF page to display before the TiledPDFView
+		// renders its content.
+		UIGraphicsBeginImageContext(pageRect.size);
+		
+		CGContextRef context = UIGraphicsGetCurrentContext();
+		
+		// First fill the background with white.
+		CGContextSetRGBFillColor(context, 1.0,1.0,1.0,1.0);
+		CGContextFillRect(context,pageRect);
+		
+		CGContextSaveGState(context);
+		// Flip the context so that the PDF page is rendered
+		// right side up.
+		CGContextTranslateCTM(context, 0.0, pageRect.size.height);
+		CGContextScaleCTM(context, 1.0, -1.0);
+		
+		// Scale the context so that the PDF page is rendered 
+		// at the correct size for the zoom level.
+		CGContextScaleCTM(context, pdfScale,pdfScale);	
+		CGContextDrawPDFPage(context, page);
+		CGContextRestoreGState(context);
+		
+		UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+		
+		UIGraphicsEndImageContext();
+		
+		backgroundImageView = [[UIImageView alloc] initWithImage:backgroundImage];
+		backgroundImageView.frame = pageRect;
+		backgroundImageView.contentMode = UIViewContentModeScaleAspectFit;
+//		[self addSubview:backgroundImageView];
+//		[self sendSubviewToBack:backgroundImageView];
+		
+		// Create the TiledPDFView based on the size of the PDF page and scale it to fit the view.
+//		pdfView = [[TiledPDFView alloc] initWithFrame:pageRect andScale:pdfScale];
+		[pdfView setPage:page];
+		
+//		[self addSubview:pdfView];
+//		[pdfView setPage:page];
+	}
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     if ((self = [super initWithFrame:frame])) {
 		currentPageNumber = 1;
         
 		// Set up the UIScrollView
-        self.showsVerticalScrollIndicator = NO;
-        self.showsHorizontalScrollIndicator = NO;
-        self.bouncesZoom = YES;
-        self.decelerationRate = UIScrollViewDecelerationRateFast;
-        self.delegate = self;
+		self.showsVerticalScrollIndicator = NO;
+		self.showsHorizontalScrollIndicator = NO;
+		self.bouncesZoom = YES;
+		self.decelerationRate = UIScrollViewDecelerationRateFast;
+		self.delegate = self;
 		[self setBackgroundColor:[UIColor grayColor]];
 		self.maximumZoomScale = 3.0;
 		self.minimumZoomScale = 0.5;

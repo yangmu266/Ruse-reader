@@ -95,7 +95,7 @@
 //	PDFScrollView *sv = [[PDFScrollView alloc] initWithFrame:[[self view] bounds]];
     CGRect rect = [_mMainView bounds];
     CGRect bounds = CGRectMake(rect.origin.x, rect.origin.y, rect.size.height, rect.size.width);
-    PDFScrollView *sv = [[PDFScrollView alloc] initWithFilePath:@"test2.pdf" withView:self withFrame:bounds];
+    PDFScrollView *sv = [[PDFScrollView alloc] initWithFilePath:@"253665.pdf" withView:self withFrame:bounds];
 //    _mScrollView.maximumZoomScale = 5.0;
 //    _mScrollView.minimumZoomScale = 1.0;
     [_mMainView addSubview: sv];

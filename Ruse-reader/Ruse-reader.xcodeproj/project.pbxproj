@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A201272136F391F0007F123 /* welcome.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A201270136F391F0007F123 /* welcome.pdf */; };
+		1A83205B1374627D008DC898 /* 253665.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A83205A1374627C008DC898 /* 253665.pdf */; };
 		1D3623260D0F684500981E51 /* Ruse_readerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1A201270136F391F0007F123 /* welcome.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = welcome.pdf; sourceTree = "<group>"; };
+		1A83205A1374627C008DC898 /* 253665.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 253665.pdf; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Ruse_readerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ruse_readerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ruse_readerAppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A83205A1374627C008DC898 /* 253665.pdf */,
 				C7B45C2113732CD600E18738 /* test2.pdf */,
 				1A201270136F391F0007F123 /* welcome.pdf */,
 				2899E5210DE3E06400AC0155 /* Ruse_readerViewController.xib */,
@@ -180,6 +183,7 @@
 				2899E5220DE3E06400AC0155 /* Ruse_readerViewController.xib in Resources */,
 				1A201272136F391F0007F123 /* welcome.pdf in Resources */,
 				C7B45C2213732CD600E18738 /* test2.pdf in Resources */,
+				1A83205B1374627D008DC898 /* 253665.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
