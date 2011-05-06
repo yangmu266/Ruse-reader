@@ -9,7 +9,6 @@
 #import "Ruse_readerViewController.h"
 //#import "Ruse_scrollDelegate.h"
 #import "PDFScrollView.h"
-#import "FileChooserTableViewController.h"
 
 @implementation Ruse_readerViewController
 

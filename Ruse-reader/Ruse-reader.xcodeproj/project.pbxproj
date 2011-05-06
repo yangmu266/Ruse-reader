@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A20126A136F38EE0007F123 /* Ruse_PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A201269136F38EE0007F123 /* Ruse_PDFView.m */; };
 		1A201272136F391F0007F123 /* welcome.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1A201270136F391F0007F123 /* welcome.pdf */; };
-		1A2ED600136F4D84000AE265 /* Ruse_scrollDelegate.m in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED5FF136F4D84000AE265 /* Ruse_scrollDelegate.m */; };
 		1D3623260D0F684500981E51 /* Ruse_readerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -25,11 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A201268136F38EE0007F123 /* Ruse_PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ruse_PDFView.h; sourceTree = "<group>"; };
-		1A201269136F38EE0007F123 /* Ruse_PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ruse_PDFView.m; sourceTree = "<group>"; };
 		1A201270136F391F0007F123 /* welcome.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = welcome.pdf; sourceTree = "<group>"; };
-		1A2ED5FE136F4D84000AE265 /* Ruse_scrollDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ruse_scrollDelegate.h; sourceTree = "<group>"; };
-		1A2ED5FF136F4D84000AE265 /* Ruse_scrollDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ruse_scrollDelegate.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Ruse_readerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ruse_readerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ruse_readerAppDelegate.m; sourceTree = "<group>"; };
@@ -77,10 +71,6 @@
 				1D3623250D0F684500981E51 /* Ruse_readerAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* Ruse_readerViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* Ruse_readerViewController.m */,
-				1A201268136F38EE0007F123 /* Ruse_PDFView.h */,
-				1A201269136F38EE0007F123 /* Ruse_PDFView.m */,
-				1A2ED5FE136F4D84000AE265 /* Ruse_scrollDelegate.h */,
-				1A2ED5FF136F4D84000AE265 /* Ruse_scrollDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -189,7 +179,6 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* Ruse_readerViewController.xib in Resources */,
 				1A201272136F391F0007F123 /* welcome.pdf in Resources */,
-				1A2ED600136F4D84000AE265 /* Ruse_scrollDelegate.m in Resources */,
 				C7B45C2213732CD600E18738 /* test2.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +193,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* Ruse_readerAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* Ruse_readerViewController.m in Sources */,
-				1A20126A136F38EE0007F123 /* Ruse_PDFView.m in Sources */,
 				C7E4B8E31372E81E00D1BECD /* PDFScrollView.m in Sources */,
 				C7E4B8E41372E81E00D1BECD /* TiledPDFView.m in Sources */,
 			);
